@@ -10,24 +10,19 @@
 </script>
 
 <script>
-    console.log("404.html")
     var url = purl();
 
     if (url.attr('host') == 'kuibarj.top') {
         var old_url = url.attr('source');
         var new_url = old_url.replace('kuibarj.top', "www.scszone.online");
-        console.log("old_url = " + old_url);
-        console.log("new_url = " + new_url);
         window.location.replace(new_url);
     } else if (url.attr('host') == 'www.kuibarj.top') {
         var old_url = url.attr('source');
         var new_url = old_url.replace('www.kuibarj.top', "www.scszone.online");
-        console.log("old_url = " + old_url);
-        console.log("new_url = " + new_url);
         window.location.replace(new_url);
     } else {
         window.location.href = "http://www.scszone.online";
     }
-
+ 
 </script>
 </html>
